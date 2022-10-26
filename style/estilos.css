@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #101820;
+}
+
+header {
+    top: 0;
+    width: 100%;
+    background: #e10600;
+    height: 80px;
+    position: sticky;
+    z-index: 100;
+}
+
+.ancho {
+    width: 90%;
+    height: 80px;
+    margin: auto;
+}
+
+.logo {
+    width: 10%;
+    height: 80px;
+    float: left;
+    padding-top: 23px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+nav {
+    width: 70%;
+    height: 80px;
+    float: left;
+    text-align: left;
+    padding: 28px;
+    padding-left: 100px;
+    box-sizing: border-box;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 20px;
+    font-weight: bold;
+    letter-spacing: .5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav ul li a:hover {
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+.slider {
+    padding-top: 30px;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider ul {
+    padding: 0;
+    display: flex;
+    width: 400%;
+
+    animation: cambio 5s infinite;
+}
+
+.slider ul li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
+}
+
+.presentacion {
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+    height: 100%;
+    padding-top: 70px;
+    background-color: #101820;
+}
+.presentacion{
+    width: 100%;
+    margin: auto;
+}
+
+.presentacion img{
+    width: 80%;
+}
+.presentacion p {
+    padding-top: 20px;
+    margin: auto;
+}
+
+.cuadros {
+    margin-top: 24px;
+    width: 100%;
+    height: 100%;
+}
+
+.cuadros ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cuadros ul :hover figcaption {
+    display: block;
+}
+
+.cuadros li {
+    width: 24%;
+}
+
+.noticia{
+    background-color: #fff;
+    width: 90%;
+}
+
+.cuadros ul li figure {
+    margin: 0px;
+    padding: 5px;
+    position: relative;
+}
+
+.cuadros ul li figure img {
+    width: 100%;
+}
+
+.cuadros ul li figure figcaption {
+    display: none;
+    color: #fff;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    text-align: center;
+    padding: 15px;
+    font: 20px/30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+footer {
+    width: 100%;
+    height: 310px;
+    background-color: #e10600;
+}
+
+footer .titulo_contenedor,
+footer .copy {
+    padding-top: 25px;
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.redes_sociales {
+    display: flex;
+    justify-content: center;
+}
+
+.redes_sociales i {
+    font-size: 50px;
+    padding: 20px;
+    color: #101820;
+}
+
+.redes_sociales i:hover {
+    color: #fff;
+}
+
+.inicio_calendario {
+    color: #fff;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 50px;
+    margin-top: 50px;
+}
+
+.no-alinear {
+    flex-wrap: wrap;
+}
+
+.videos {
+    color: #fff;
+    padding: 20px;
+    padding-top: 24px;
+}
+
+.pilotos {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+}
+
+.pilotos ul {
+    padding: 20px;
+    list-style: none;
+    display: flex;
+}
+
+.pilotos ul li {
+    padding: 15px;
+    width: 25%;
+    padding-left: 5%;
+}
+
+.pilotos figcaption {
+    font-size: 17px;
+    text-align: justify;
+}
+
+.texto-blanco {
+    color: #fff;
+    text-align: center;
+    padding: 24px;
+    list-style: none;
+}
+
+.no-estilo {
+    text-decoration: none;
+    color: #101820;
+}
+
+.fondo {
+    width: 100%;
+    z-index: -1;
+    position: fixed;
+}
+
+.fondo-negro {
+    background-color: #101820;
+    width: 300PX;
+    text-align: center;
+}
+
+.videos {
+    padding: 24px;
+}
+
+.high {
+    width: 560px;
+    height: 315px;
+}
+
+.equipos {
+    width: 100%;
+    height: 100%;
+}
+
+.equipos ul {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    padding-left: 88px;
+}
+
+.equipos li {
+    padding-top: 25px;
+}
+
+.icono {
+    height: 50px;
+    width: 50px;
+}
+
+.alinear {
+    justify-content: space-around;
+}
+
+.team {
+    width: 600px;
+    height: 350px;
+}
+
+.monoplaza {
+    height: 50%;
+}
