@@ -4,7 +4,9 @@
   "description": "proyecyo coder html",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "sass scss/prueba.scss css/pruebacss.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/AudreyRuiz/44715-SitiowebF1/issues"
   },
-  "homepage": "https://github.com/AudreyRuiz/44715-SitiowebF1#readme"
+  "homepage": "https://github.com/AudreyRuiz/44715-SitiowebF1#readme",
+  "devDependencies": {
+    "sass": "^1.55.0"
+  }
 }
