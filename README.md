@@ -1,3 +1,7 @@
+<h1 aling="center">Hi👋, I'm Audrey Aminadab Ruiz Darder</h1>
+<h3 aling="center">A passionate fronted developer from Mexico🌮</h1>
+<p><img align="right" alt="Coding" width="500" src="https://media.tenor.com/GfSX-u7VGM4AAAAC/coding.gif"></p>
+
 # 💫 About Me:
 🔭 I’m currently working on F1 Page<br>💬 Ask me about VideoGames<br>⚡ Fun fact I am funny
 
