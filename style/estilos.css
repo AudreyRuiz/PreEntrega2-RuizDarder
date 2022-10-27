@@ -436,6 +436,19 @@ footer .copy {
     font-weight: 700;
 }
 
+@media(max-width:1090px){
+    .cuadros ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        flex-direction:column;
+    }
+    .cuadros li figure {
+        width: 100%;
+        height: 50%;
+    }
+}
+
 @media(max-width:991px) {
 
     .card {
