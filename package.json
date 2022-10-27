@@ -1,0 +1,19 @@
+{
+  "name": "1erpre",
+  "version": "1.0.0",
+  "description": "proyecyo coder html",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AudreyRuiz/44715-SitiowebF1.git"
+  },
+  "author": "Audrey A Ruiz Darder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AudreyRuiz/44715-SitiowebF1/issues"
+  },
+  "homepage": "https://github.com/AudreyRuiz/44715-SitiowebF1#readme"
+}
