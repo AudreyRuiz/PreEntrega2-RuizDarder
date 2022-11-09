@@ -10,6 +10,7 @@
 body {
     background-color: #101820;
     min-height: 100vh;
+    max-width: 100%
 }
 
 h1 {
@@ -135,11 +136,12 @@ ul {
     color: #fff;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    width: 100%;
+    width: 80%;
     height: 100%;
     padding-top: 70px;
     background-color: #101820;
     margin: auto;
+    padding-bottom: 50px;
 }
 
 .presentacion h1 {
@@ -166,7 +168,7 @@ ul {
     list-style: none;
     display: flex;
     align-items: center;
-    flex-direction:row;
+    flex-direction: row;
 }
 
 .cuadros ul :hover figcaption {
@@ -204,6 +206,68 @@ ul {
     font: 20px/30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: rgba(0, 0, 0, .7);
+}
+
+.cuadros-calendario {
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+}
+
+.cuadros-calendario ul {
+    justify-content: center;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.cuadros-calendario ul :hover figcaption {
+    display: block;
+}
+
+.cuadros-calendario li {
+    width: 30%;
+}
+
+.circuito {
+    width: 100%;
+}
+
+.cuadros-calendario ul li figure {
+    margin: 0px;
+    padding: 5px;
+    position: relative;
+}
+
+.cuadros-calendario ul li figure img {
+    width: 100%;
+}
+
+.cuadros-calendario ul li figure figcaption {
+    display: none;
+    color: #fff;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    text-align: center;
+    padding: 15px;
+    font: 20px/30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.cuadros-calendario figcaption a {
+    position: relative;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color:#e10600;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
 }
 
 footer {
@@ -258,6 +322,11 @@ footer .copy {
     letter-spacing: .5px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+.menu_footer ul li a:hover {
+    color: black;
+}
+
 
 .inicio_calendario {
     color: #fff;
@@ -351,6 +420,8 @@ footer .copy {
     align-items: center;
     border-radius: 20px;
     transition: 0.5s;
+    margin-top: 80px;
+    margin-left: 15px;
 }
 
 .card .circle {
@@ -391,19 +462,39 @@ footer .copy {
 }
 
 .card:hover img {
+    left: 98%;
+    height: 145px;
+    z-index: 2;
+}
+
+.card .piloto {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 185px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.card:hover .piloto {
     left: 95%;
-    height: 165px;
+    height: 300px;
     z-index: 2;
 }
 
 .card .content {
     position: relative;
-    width: 50%;
+    width: 60%;
     left: 20%;
     padding: 20px 20px 20px 40px;
     transition: 0.5s;
     opacity: 0;
     visibility: hidden;
+}
+
+.card .bandera {
+    height: 30px !important;
 }
 
 .card:hover .content {
@@ -436,13 +527,14 @@ footer .copy {
     font-weight: 700;
 }
 
-@media(max-width:1090px){
+@media(max-width:1090px) {
     .cuadros ul {
         list-style: none;
         display: flex;
         align-items: center;
-        flex-direction:column;
+        flex-direction: column;
     }
+
     .cuadros li figure {
         width: 100%;
         height: 50%;
@@ -473,22 +565,61 @@ footer .copy {
         left: 50%;
         height: 130px;
     }
+
+    .card .bandera {
+        height: 50px !important;
+        position: absolute;
+        top: 300px !important;
+    }
+
+    .cuadros-calendario ul li figure figcaption{
+        font-size: 14px;
+    }
+}
+
+@media (max-width:850px){
+    .cuadros-calendario li {
+        width: 50%;
+    }
+    .cuadros-calendario ul li figure figcaption{
+        font-size: 18px;
+    }
 }
 
 @media (max-width:726px) {
-    .menu ul li a{
+    .menu ul li a {
         font-size: 15px;
     }
-    footer{
+
+    footer {
         height: 225px;
     }
-    .contenedor p{
-        padding-top: 0;
-    }
-    .menu_footer{
+    .menu_footer {
         display: none;
     }
-    
+
+}
+
+@media (max-width:630px){
+    .cuadros-calendario li {
+        width: 50%;
+    }
+    .cuadros-calendario ul li figure figcaption{
+        font-size: 15px;
+    }
+    .contenedor p {
+        margin-top: 0;
+        font-size: 12px;
+    }
+}
+
+@media (max-width:540px){
+    .cuadros-calendario li {
+        width: 80%;
+    }
+    .cuadros-calendario ul li figure figcaption{
+        font-size: 16px;
+    }
 }
 
 @media(max-width:420px) {
