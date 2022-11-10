@@ -23,12 +23,8 @@ header {
 }
 
 nav {
+    @include menu;
     width: 90%;
-    height: 80px;
-    float: left;
-    text-align: center;
-    padding-top: 23px;
-    box-sizing: border-box;
 }
 
 nav ul li {
