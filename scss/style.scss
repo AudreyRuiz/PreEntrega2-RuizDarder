@@ -14,11 +14,22 @@
 body {
     background-color: $color-fondo;
     min-height: 100vh;
-    max-width: 100%
+    max-width: 100%;
+    transition: .3s ease all;
+
+    &.dark{
+        background-color: $color-letras;
+    }
 }
 
 h1 {
     text-transform: uppercase;
+
+    transition: .3s ease all;
+
+    body.dark &{
+        color: $color-fondo;
+    }
 }
 
 .slider {
@@ -90,6 +101,18 @@ h1 {
     background-color: $color-fondo;
     margin: auto;
     padding-bottom: 50px;
+
+    transition: .3s ease all;
+
+    body.dark &{
+        background-color: $color-letras;
+        p{
+            color: $color-fondo;
+        }
+        h4{
+            color: $color-fondo;
+        }
+    }
 }
 
 .presentacion h1 {
