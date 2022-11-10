@@ -1,0 +1,56 @@
+footer {
+    width: 100%;
+    height: 300px;
+    background-color: $color-rojo;
+}
+
+footer .titulo_contenedor,
+footer .copy {
+    padding-top: 25px;
+    color: $color-letras;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.redes_sociales {
+    display: flex;
+    justify-content: center;
+}
+
+.redes_sociales i {
+    font-size: 50px;
+    padding: 20px;
+    color: $color-fondo;
+}
+
+.redes_sociales i:hover {
+    color: $color-letras;
+}
+
+.menu_footer {
+    width: 100%;
+    height: 80px;
+    float: left;
+    text-align: center;
+    padding-top: 23px;
+    box-sizing: border-box;
+}
+
+.menu_footer ul li {
+    display: inline-block;
+}
+
+.menu_footer ul li a {
+    color: $color-letras;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 20px;
+    font-weight: bold;
+    letter-spacing: .5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.menu_footer ul li a:hover {
+    color: black;
+}

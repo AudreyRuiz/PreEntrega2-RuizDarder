@@ -1,0 +1,25 @@
+{
+  "name": "1erpre",
+  "version": "1.0.0",
+  "description": "proyectocoderhtml",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss style/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AudreyRuiz/44715-SitiowebF1.git"
+  },
+  "author": "Audrey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AudreyRuiz/44715-SitiowebF1/issues"
+  },
+  "homepage": "https://github.com/AudreyRuiz/44715-SitiowebF1#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}
