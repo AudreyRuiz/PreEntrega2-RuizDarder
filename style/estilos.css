@@ -196,7 +196,7 @@ h1 {
 .slider ul {
   padding: 0;
   display: flex;
-  width: 400%;
+  width: 500%;
   animation: cambio 5s infinite; }
 
 .slider ul li {
