@@ -35,7 +35,6 @@ h1 {
     width: 80%;
     height: 100%;
     padding-top: 70px;
-    background-color: $color-fondo;
     margin: auto;
     padding-bottom: 50px;
 
@@ -50,6 +49,17 @@ h1 {
             color: $color-fondo;
         }
     }
+}
+
+.presentacion2 {
+    color: $color-fondo;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 80%;
+    height: 100%;
+    padding-top: 70px;
+    margin: auto;
+    padding-bottom: 50px;
 }
 
 .presentacion h1 {
