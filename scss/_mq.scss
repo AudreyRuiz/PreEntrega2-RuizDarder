@@ -78,6 +78,42 @@
         grid-column-start: span 1;
     }
 }
+@media screen and (min-width:768px) {
+    .logo{
+        margin-left: 50px;
+    }
+    nav{
+        height: 100px;
+    }
+    .bar-btn{
+        display: none;
+    }
+    .nav-menu{
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;
+    }
+    .nav-menu li {
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 20px;
+        transition: none;
+    }
+    .nav-menu li a{
+        font-size: 12px;
+    }
+    .banner-text h3{
+        font-size: 70px;
+        margin-bottom: 30px;
+    }
+    .banner-text h2{
+        font-size: 20px;
+    }
+}
 
 @media (max-width:726px) {
     .menu ul li a {
@@ -127,10 +163,6 @@
     .gallery_container{
         grid-template-columns: repeat(1,1fr);
     }
-    // .gallery_item{
-    //     width: 100%;
-    //     height: 100%;
-    // }
     .gallery_item:nth-child(1){
         grid-row-start: span 2;
     }
@@ -174,6 +206,12 @@
 
     .cuadros-calendario ul li figure figcaption {
         font-size: 16px;
+    }
+    .button1{
+        display: none;
+    }
+    .button2{
+        display: none;
     }
 }
 

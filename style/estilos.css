@@ -1,3 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
+body {
+  background-color: #101820;
+  min-height: 100vh;
+  max-width: 100%;
+  transition: .3s ease all; }
+  body.dark {
+    background-color: #fff; }
+
+h1 {
+  text-transform: uppercase;
+  transition: .3s ease all; }
+  body.dark h1 {
+    color: #101820; }
+
+.presentacion {
+  color: #fff;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width: 80%;
+  height: 100%;
+  padding-top: 70px;
+  background-color: #101820;
+  margin: auto;
+  padding-bottom: 50px;
+  transition: .3s ease all; }
+  body.dark .presentacion {
+    background-color: #fff; }
+    body.dark .presentacion p {
+      color: #101820; }
+    body.dark .presentacion h4 {
+      color: #101820; }
+
+.presentacion h1 {
+  margin: auto; }
+
+.presentacion img {
+  width: 80%; }
+
+.presentacion p {
+  width: 80%;
+  margin: auto; }
+
+.texto-blanco {
+  color: #fff;
+  text-align: center;
+  padding: 24px;
+  list-style: none; }
+
+.no-estilo {
+  text-decoration: none;
+  color: #101820; }
+
+.fondo {
+  width: 100%;
+  z-index: -1;
+  position: fixed; }
+
+.fondo-negro {
+  background-color: #101820;
+  width: 300PX;
+  text-align: center; }
+
+.high {
+  width: 560px;
+  height: 315px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/fondoheader.png);
+  text-decoration: none;
+  background-position: center;
+  background-size: cover; }
+
+.header2 {
+  width: 100%;
+  height: 15vh;
+  background-image: url(../img/fondoheader.png);
+  text-decoration: none;
+  background-position: top; }
+
+nav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.logo {
+  width: 140px;
+  margin-left: 20px; }
+
+.bar-btn {
+  font-size: 25px;
+  color: #fff;
+  margin-right: 20px;
+  cursor: pointer; }
+
+.nav-menu {
+  position: fixed;
+  width: 100%;
+  height: 0vh;
+  top: 100px;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  transition: all .5%;
+  z-index: 100; }
+
+.nav-menu li {
+  display: none;
+  line-height: 30px;
+  margin: 50px 0;
+  transition: all .5s; }
+
+.nav-menu li a {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600; }
+
+.nav-menu li a.active,
+.nav-menu li a:hover {
+  color: #e10600;
+  transition: .3s; }
+  body.dark .nav-menu li a.active, body.dark
+  .nav-menu li a:hover {
+    color: #e10600; }
+
+#check {
+  display: none; }
+
+#check:checked ~ .nav-menu {
+  height: 100vh; }
+
+#check:checked ~ .nav-menu li {
+  display: block; }
+
+.banner-text {
+  padding: 0 30px;
+  margin-top: 150px;
+  text-align: center;
+  color: #fff; }
+
+.banner-text h3 {
+  font-size: 50px;
+  margin-bottom: 30px; }
+
+.banner-text span {
+  color: #e10600; }
+
+.banner-text h2 {
+  font-size: 35px;
+  font-weight: 600;
+  color: #fff; }
+
+.button1 {
+  margin-right: 40px;
+  padding: 10px;
+  background-color: #e10600;
+  color: #fff;
+  border-radius: 5px; }
+
+.button1:hover {
+  background-color: #fff;
+  color: #e10600;
+  transition: .5s; }
+
+.button2 {
+  margin-right: 40px;
+  padding: 10px;
+  background-color: #fff;
+  color: #e10600;
+  border-radius: 5px; }
+
+.button2:hover {
+  background-color: #e10600;
+  color: #fff;
+  transition: .5s; }
+
+.switch {
+  margin-left: 20px;
+  background-color: #343d5b;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  outline: none; }
+  .switch::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #f1f1f1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: .3s ease all;
+    box-shadow: 0px 0px 2px 2px black; }
+  .switch.active {
+    background: orange;
+    color: #000; }
+    .switch.active::after {
+      right: 0;
+      left: unset; }
+  .switch span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: #fff; }
+
 footer {
   width: 100%;
   height: 300px;
@@ -46,147 +278,6 @@ footer .copy {
 .menu_footer ul li a:hover {
   color: black; }
 
-header {
-  top: 0;
-  width: 100%;
-  background: #e10600;
-  height: 80px;
-  position: sticky;
-  z-index: 100; }
-
-.ancho {
-  width: 90%;
-  height: 80px;
-  margin: auto; }
-
-.logo {
-  width: 10%;
-  height: 80px;
-  float: left;
-  padding-top: 23px;
-  box-sizing: border-box;
-  text-align: center; }
-
-nav {
-  width: 100%;
-  height: 80px;
-  float: left;
-  text-align: center;
-  padding-top: 23px;
-  box-sizing: border-box;
-  width: 90%; }
-
-nav ul li {
-  display: inline-block; }
-
-nav ul li a {
-  color: #fff;
-  font-size: 18px;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding-left: 20px;
-  font-weight: bold;
-  letter-spacing: .5px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
-
-nav ul li a:hover {
-  color: black; }
-
-ul {
-  list-style: none; }
-
-.switch {
-  margin-left: 20px;
-  background-color: #343d5b;
-  border-radius: 1000px;
-  border: none;
-  position: relative;
-  cursor: pointer;
-  display: flex;
-  outline: none; }
-  .switch::after {
-    content: "";
-    display: block;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    background: #f1f1f1;
-    top: 0;
-    left: 0;
-    right: unset;
-    border-radius: 100px;
-    transition: .3s ease all;
-    box-shadow: 0px 0px 2px 2px black; }
-  .switch.active {
-    background: orange;
-    color: #000; }
-    .switch.active::after {
-      right: 0;
-      left: unset; }
-  .switch span {
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    display: block;
-    background: none;
-    color: #fff; }
-
-.gallery_container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 350px;
-  padding: 20px;
-  grid-gap: 10px;
-  padding-bottom: 45px; }
-
-.gallery_item {
-  position: relative; }
-
-.gallery_img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; }
-
-.gallery_title {
-  position: absolute;
-  bottom: 0;
-  color: #fff;
-  background: linear-gradient(rgba(255, 255, 255, 0.1), black);
-  width: 100%;
-  margin: 0;
-  padding: 10px; }
-
-.gallery_item:nth-child(4) {
-  grid-column-start: span 2; }
-
-.gallery_item:nth-child(5) {
-  grid-row-start: span 2; }
-
-.gallery_item:nth-child(9) {
-  grid-column-start: span 2; }
-
-* {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
-
-body {
-  background-color: #101820;
-  min-height: 100vh;
-  max-width: 100%;
-  transition: .3s ease all; }
-  body.dark {
-    background-color: #fff; }
-
-h1 {
-  text-transform: uppercase;
-  transition: .3s ease all; }
-  body.dark h1 {
-    color: #101820; }
-
 .slider {
   padding-top: 30px;
   width: 100%;
@@ -224,34 +315,6 @@ h1 {
     margin-left: -300%; }
   100% {
     margin-left: -300%; } }
-
-.presentacion {
-  color: #fff;
-  text-align: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  width: 80%;
-  height: 100%;
-  padding-top: 70px;
-  background-color: #101820;
-  margin: auto;
-  padding-bottom: 50px;
-  transition: .3s ease all; }
-  body.dark .presentacion {
-    background-color: #fff; }
-    body.dark .presentacion p {
-      color: #101820; }
-    body.dark .presentacion h4 {
-      color: #101820; }
-
-.presentacion h1 {
-  margin: auto; }
-
-.presentacion img {
-  width: 80%; }
-
-.presentacion p {
-  width: 80%;
-  margin: auto; }
 
 .cuadros {
   margin-top: 24px;
@@ -359,10 +422,104 @@ h1 {
 .no-alinear {
   flex-wrap: wrap; }
 
-.videos {
-  color: #fff;
-  padding: 2px;
-  padding-top: 24px; }
+:root {
+  --main-bg-color: #020710; }
+
+.cargando {
+  text-align: center;
+  color: #a4adb2;
+  font-size: 1.1rem;
+  font-family: "Press Start 2P", cursive;
+  position: relative;
+  z-index: 1;
+  margin: 0; }
+
+span.dot {
+  margin-left: -1rem; }
+
+.one {
+  opacity: 0;
+  animation: dot 1.3s infinite;
+  animation-delay: 0s; }
+
+.two {
+  opacity: 0;
+  animation: dot 1.3s infinite;
+  animation-delay: 0.2s; }
+
+.three {
+  opacity: 0;
+  animation: dot 1.3s infinite;
+  animation-delay: 0.3s; }
+
+@keyframes dot {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.bottom,
+.rh-line,
+.ibm-line {
+  fill: none; }
+
+.bottom {
+  stroke-width: inherit;
+  stroke: #567;
+  stroke-opacity: 0.3; }
+
+.rh-line,
+.ibm-line {
+  stroke: #f80000;
+  animation: loop 3s linear infinite;
+  stroke-dasharray: 0 28;
+  stroke-linecap: round; }
+
+.mario-path {
+  width: 100%;
+  stroke-width: 1.43;
+  animation: rot 36s linear infinite;
+  max-height: 50vh;
+  margin-top: 25vh; }
+
+.ibm-line {
+  stroke: #00ef00;
+  animation-delay: -1.5s; }
+
+.rh-line,
+.ibm-line {
+  mix-blend-mode: screen; }
+
+@keyframes rot {
+  49% {
+    transform: rotate(179deg) rotatey(70deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@keyframes loop {
+  0% {
+    stroke-dashoffset: 0.5;
+    stroke-dasharray: 1 26.5;
+    stroke-width: 1.5; }
+  20% {
+    stroke-width: 0.35; }
+  50% {
+    stroke-dasharray: 7 20.5; }
+  90% {
+    stroke-width: 0.35; }
+  100% {
+    stroke-width: 1.5;
+    stroke-dasharray: 1 26.5;
+    stroke-dashoffset: 28; } }
+
+.clip-shadow {
+  stroke-linecap: butt;
+  fill: none;
+  opacity: 0.9;
+  stroke-width: inherit;
+  stroke: url(#sgrad); }
 
 .pilotos {
   height: 100%;
@@ -382,33 +539,6 @@ h1 {
 .pilotos figcaption {
   font-size: 17px;
   text-align: justify; }
-
-.texto-blanco {
-  color: #fff;
-  text-align: center;
-  padding: 24px;
-  list-style: none; }
-
-.no-estilo {
-  text-decoration: none;
-  color: #101820; }
-
-.fondo {
-  width: 100%;
-  z-index: -1;
-  position: fixed; }
-
-.fondo-negro {
-  background-color: #101820;
-  width: 300PX;
-  text-align: center; }
-
-.videos {
-  padding: 2px; }
-
-.high {
-  width: 560px;
-  height: 315px; }
 
 .contenedor-escuderia {
   display: flex;
@@ -520,6 +650,330 @@ h1 {
   text-decoration: none;
   font-weight: 700; }
 
+#supermariopath-banana-peel_to {
+  animation: supermariopath-banana-peel_to__to 6000ms linear infinite normal forwards; }
+
+@keyframes supermariopath-banana-peel_to__to {
+  0% {
+    offset-distance: 0%; }
+  41% {
+    offset-distance: 0%; }
+  43% {
+    offset-distance: 14%; }
+  45% {
+    offset-distance: 23%; }
+  48% {
+    offset-distance: 32%; }
+  51% {
+    offset-distance: 36%; }
+  81% {
+    offset-distance: 37%; }
+  85% {
+    offset-distance: 67%; }
+  91% {
+    offset-distance: 100%; }
+  100% {
+    offset-distance: 100%; } }
+
+#supermariopath-banana-peel_tr {
+  animation: supermariopath-banana-peel_tr__tr 6000ms linear infinite normal forwards; }
+
+@keyframes supermariopath-banana-peel_tr__tr {
+  0% {
+    transform: rotate(-14.77781deg); }
+  43% {
+    transform: rotate(-14.77781deg); }
+  45% {
+    transform: rotate(-29.73249deg); }
+  48% {
+    transform: rotate(17.11257deg); }
+  51% {
+    transform: rotate(-6.49933deg); }
+  81% {
+    transform: rotate(-7.94363deg); }
+  85% {
+    transform: rotate(-42.60694deg); }
+  86% {
+    transform: rotate(-104.07722deg); }
+  91% {
+    transform: rotate(-225.70443deg); }
+  100% {
+    transform: rotate(-225.70443deg); } }
+
+#supermariopath-banana-peel {
+  animation: supermariopath-banana-peel_c_o 6000ms linear infinite normal forwards; }
+
+@keyframes supermariopath-banana-peel_c_o {
+  0% {
+    opacity: 0; }
+  41% {
+    opacity: 0; }
+  43% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+
+#supermariopath-oil-shadow {
+  animation: supermariopath-oil-shadow_c_o 6000ms linear infinite normal forwards; }
+
+@keyframes supermariopath-oil-shadow_c_o {
+  0% {
+    opacity: 0; }
+  41% {
+    opacity: 0; }
+  73% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+
+#supermariopath-mario_to {
+  animation: supermariopath-mario_to__to 6000ms linear infinite normal forwards; }
+
+@keyframes supermariopath-mario_to__to {
+  0% {
+    offset-distance: 0%;
+    animation-timing-function: cubic-bezier(0.93, -0.025, 1, 1); }
+  3% {
+    offset-distance: 2%;
+    animation-timing-function: cubic-bezier(0.42, 0, 1, 1); }
+  15% {
+    offset-distance: 11%; }
+  20% {
+    offset-distance: 16%; }
+  21% {
+    offset-distance: 20%; }
+  25% {
+    offset-distance: 27%; }
+  30% {
+    offset-distance: 35%; }
+  40% {
+    offset-distance: 46%; }
+  42% {
+    offset-distance: 50%; }
+  53% {
+    offset-distance: 61%; }
+  55% {
+    offset-distance: 63%; }
+  67% {
+    offset-distance: 70%; }
+  68% {
+    offset-distance: 74%; }
+  70% {
+    offset-distance: 78%; }
+  78% {
+    offset-distance: 90%; }
+  82% {
+    offset-distance: 94%; }
+  92% {
+    offset-distance: 100%; }
+  100% {
+    offset-distance: 100%; } }
+
+#supermariopath-mario_tr {
+  animation: supermariopath-mario_tr__tr 6000ms linear infinite normal forwards; }
+
+@keyframes supermariopath-mario_tr__tr {
+  0% {
+    transform: rotate(0deg); }
+  3% {
+    transform: rotate(-0.7deg); }
+  12% {
+    transform: rotate(28deg); }
+  17% {
+    transform: rotate(9deg); }
+  20% {
+    transform: rotate(-115deg); }
+  25% {
+    transform: rotate(-178deg); }
+  32% {
+    transform: rotate(-176deg); }
+  35% {
+    transform: rotate(-310deg); }
+  40% {
+    transform: rotate(-374deg); }
+  47% {
+    transform: rotate(-338deg); }
+  50% {
+    transform: rotate(-350deg); }
+  55% {
+    transform: rotate(-415deg); }
+  68% {
+    transform: rotate(-545deg); }
+  70% {
+    transform: rotate(-538deg); }
+  73% {
+    transform: rotate(-533deg); }
+  78% {
+    transform: rotate(-590deg); }
+  82% {
+    transform: rotate(-719deg); }
+  92% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(0deg); } }
+
+#supermariopath-mario {
+  animation: supermariopath-mario__fl 6000ms linear infinite normal forwards; }
+
+@keyframes supermariopath-mario__fl {
+  0% {
+    filter: drop-shadow(5px 8px 14.14214px rgba(0, 0, 0, 0.85)) blur(0px); }
+  40% {
+    filter: drop-shadow(5px 8px 14.14214px rgba(0, 0, 0, 0.85)) blur(0px); }
+  42% {
+    filter: drop-shadow(5px 8px 14.14214px rgba(0, 0, 0, 0.85)) blur(4px); }
+  43% {
+    filter: drop-shadow(5px 8px 14.14214px rgba(0, 0, 0, 0.85)) blur(0px); }
+  100% {
+    filter: drop-shadow(5px 8px 14.14214px rgba(0, 0, 0, 0.85)) blur(0px); } }
+
+#supermariopath-mario-wheels-front_tr {
+  animation: supermariopath-mario-wheels-front_tr__tr 6000ms linear infinite normal forwards; }
+
+@keyframes supermariopath-mario-wheels-front_tr__tr {
+  0% {
+    transform: translate(44px, 28px) rotate(-0.9deg); }
+  10% {
+    transform: translate(44px, 28px) rotate(9deg); }
+  13% {
+    transform: translate(44px, 28px) rotate(-8deg); }
+  18% {
+    transform: translate(44px, 28px) rotate(5deg); }
+  20% {
+    transform: translate(44px, 28px) rotate(-0.5deg); }
+  23% {
+    transform: translate(44px, 28px) rotate(-16deg); }
+  25% {
+    transform: translate(44px, 28px) rotate(0deg); }
+  60% {
+    transform: translate(44px, 28px) rotate(-16); }
+  68% {
+    transform: translate(44px, 28px) rotate(0.8g); }
+  100% {
+    transform: translate(44px, 28px) rotate(0.8deg); } }
+
+#supermariopath-mario-gloves_tr {
+  animation: supermariopath-mario-gloves_tr__tr 6000ms linear infinite normal forwards; }
+
+@keyframes supermariopath-mario-gloves_tr__tr {
+  0% {
+    transform: translate(33px, 28px) rotate(0deg); }
+  10% {
+    transform: translate(33px, 28px) rotate(9deg); }
+  13% {
+    transform: translate(33px, 28px) rotate(-3deg); }
+  18% {
+    transform: translate(33px, 28px) rotate(14deg); }
+  20% {
+    transform: translate(33px, 28px) rotate(-0.9deg); }
+  23% {
+    transform: translate(33px, 28px) rotate(-9deg); }
+  25% {
+    transform: translate(33px, 28px) rotate(0deg); }
+  60% {
+    transform: translate(33px, 28px) rotate(-10deg); }
+  68% {
+    transform: translate(33px, 28px) rotate(-2deg); }
+  100% {
+    transform: translate(33px, 28px) rotate(-2deg); } }
+
+#supermariopath-luigi_to {
+  animation: supermariopath-luigi_to__to 6000ms linear infinite normal forwards; }
+
+@keyframes supermariopath-luigi_to__to {
+  0% {
+    offset-distance: 0%;
+    animation-timing-function: cubic-bezier(0.96, -0.01, 1, 1); }
+  3% {
+    offset-distance: 3%; }
+  6% {
+    offset-distance: 6%; }
+  8% {
+    offset-distance: 12%; }
+  16% {
+    offset-distance: 26%; }
+  25% {
+    offset-distance: 41%; }
+  33% {
+    offset-distance: 79%; }
+  40% {
+    offset-distance: 91%; }
+  41% {
+    offset-distance: 92%; }
+  50% {
+    offset-distance: 100%; }
+  100% {
+    offset-distance: 100%; } }
+
+#supermariopath-luigi_tr {
+  animation: supermariopath-luigi_tr__tr 6000ms linear infinite normal forwards; }
+
+@keyframes supermariopath-luigi_tr__tr {
+  0% {
+    transform: rotate(0deg); }
+  8% {
+    transform: rotate(0deg); }
+  10% {
+    transform: rotate(15deg); }
+  16% {
+    transform: rotate(-35deg); }
+  25% {
+    transform: rotate(-153deg); }
+  26% {
+    transform: rotate(-176deg); }
+  31% {
+    transform: rotate(-195deg); }
+  33% {
+    transform: rotate(-255deg); }
+  35% {
+    transform: rotate(-286deg); }
+  36% {
+    transform: rotate(-286deg); }
+  38% {
+    transform: rotate(-313deg); }
+  40% {
+    transform: rotate(-343deg); }
+  41% {
+    transform: rotate(-318deg); }
+  50% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(0deg); } }
+
+.gallery_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 350px;
+  padding: 20px;
+  grid-gap: 10px;
+  padding-bottom: 45px; }
+
+.gallery_item {
+  position: relative; }
+
+.gallery_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.gallery_title {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  background: linear-gradient(rgba(255, 255, 255, 0.1), black);
+  width: 100%;
+  margin: 0;
+  padding: 10px; }
+
+.gallery_item:nth-child(4) {
+  grid-column-start: span 2; }
+
+.gallery_item:nth-child(5) {
+  grid-row-start: span 2; }
+
+.gallery_item:nth-child(9) {
+  grid-column-start: span 2; }
+
 @media (max-width: 1100px) {
   .cuadros ul {
     list-style: none;
@@ -570,6 +1024,34 @@ h1 {
     grid-row-start: span 3; }
   .gallery_item:nth-child(5) {
     grid-column-start: span 1; } }
+
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-left: 50px; }
+  nav {
+    height: 100px; }
+  .bar-btn {
+    display: none; }
+  .nav-menu {
+    position: relative;
+    height: 100px;
+    top: 0;
+    background: none;
+    transition: none;
+    text-align: right;
+    margin-right: 50px; }
+  .nav-menu li {
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 20px;
+    transition: none; }
+  .nav-menu li a {
+    font-size: 12px; }
+  .banner-text h3 {
+    font-size: 70px;
+    margin-bottom: 30px; }
+  .banner-text h2 {
+    font-size: 20px; } }
 
 @media (max-width: 726px) {
   .menu ul li a {
@@ -629,7 +1111,11 @@ h1 {
   .cuadros-calendario li {
     width: 80%; }
   .cuadros-calendario ul li figure figcaption {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .button1 {
+    display: none; }
+  .button2 {
+    display: none; } }
 
 @media (max-width: 420px) {
   .card:hover {

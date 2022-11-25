@@ -1,0 +1,532 @@
+#supermariopath-banana-peel_to {
+    animation: supermariopath-banana-peel_to__to 6000ms linear infinite normal forwards;
+}
+
+@keyframes supermariopath-banana-peel_to__to {
+    0% {
+        offset-distance: 0%;
+    }
+
+    41% {
+        offset-distance: 0%;
+    }
+
+    43% {
+        offset-distance: 14%;
+    }
+
+    45% {
+        offset-distance: 23%;
+    }
+
+    48% {
+        offset-distance: 32%;
+    }
+
+    51% {
+        offset-distance: 36%;
+    }
+
+    81% {
+        offset-distance: 37%;
+    }
+
+    85% {
+        offset-distance: 67%;
+    }
+
+    91% {
+        offset-distance: 100%;
+    }
+
+    100% {
+        offset-distance: 100%;
+    }
+}
+
+#supermariopath-banana-peel_tr {
+    animation: supermariopath-banana-peel_tr__tr 6000ms linear infinite normal forwards;
+}
+
+@keyframes supermariopath-banana-peel_tr__tr {
+    0% {
+        transform: rotate(-14.777809deg);
+    }
+
+    43% {
+        transform: rotate(-14.777809deg);
+    }
+
+    45% {
+        transform: rotate(-29.732491deg);
+    }
+
+    48% {
+        transform: rotate(17.112574deg);
+    }
+
+    51% {
+        transform: rotate(-6.49933deg);
+    }
+
+    81% {
+        transform: rotate(-7.943635deg);
+    }
+
+    85% {
+        transform: rotate(-42.606943deg);
+    }
+
+    86% {
+        transform: rotate(-104.077222deg);
+    }
+
+    91% {
+        transform: rotate(-225.704426deg);
+    }
+
+    100% {
+        transform: rotate(-225.704426deg);
+    }
+}
+
+#supermariopath-banana-peel {
+    animation: supermariopath-banana-peel_c_o 6000ms linear infinite normal forwards;
+}
+
+@keyframes supermariopath-banana-peel_c_o {
+    0% {
+        opacity: 0;
+    }
+
+    41% {
+        opacity: 0;
+    }
+
+    43% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#supermariopath-oil-shadow {
+    animation: supermariopath-oil-shadow_c_o 6000ms linear infinite normal forwards;
+}
+
+@keyframes supermariopath-oil-shadow_c_o {
+    0% {
+        opacity: 0;
+    }
+
+    41% {
+        opacity: 0;
+    }
+
+    73% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#supermariopath-mario_to {
+    animation: supermariopath-mario_to__to 6000ms linear infinite normal forwards;
+}
+
+@keyframes supermariopath-mario_to__to {
+    0% {
+        offset-distance: 0%;
+        animation-timing-function: cubic-bezier(0.93, -0.025, 1, 1);
+    }
+
+    3% {
+        offset-distance: 2%;
+        animation-timing-function: cubic-bezier(0.42, 0, 1, 1);
+    }
+
+    15% {
+        offset-distance: 11%;
+    }
+
+    20% {
+        offset-distance: 16%;
+    }
+
+    21% {
+        offset-distance: 20%;
+    }
+
+    25% {
+        offset-distance: 27%;
+    }
+
+    30% {
+        offset-distance: 35%;
+    }
+
+    40% {
+        offset-distance: 46%;
+    }
+
+    42% {
+        offset-distance: 50%;
+    }
+
+    53% {
+        offset-distance: 61%;
+    }
+
+    55% {
+        offset-distance: 63%;
+    }
+
+    67% {
+        offset-distance: 70%;
+    }
+
+    68% {
+        offset-distance: 74%;
+    }
+
+    70% {
+        offset-distance: 78%;
+    }
+
+    78% {
+        offset-distance: 90%;
+    }
+
+    82% {
+        offset-distance: 94%;
+    }
+
+    92% {
+        offset-distance: 100%;
+    }
+
+    100% {
+        offset-distance: 100%;
+    }
+}
+
+#supermariopath-mario_tr {
+    animation: supermariopath-mario_tr__tr 6000ms linear infinite normal forwards;
+}
+
+@keyframes supermariopath-mario_tr__tr {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    3% {
+        transform: rotate(-0.7deg);
+    }
+
+    12% {
+        transform: rotate(28deg);
+    }
+
+    17% {
+        transform: rotate(9deg);
+    }
+
+    20% {
+        transform: rotate(-115deg);
+    }
+
+    25% {
+        transform: rotate(-178deg);
+    }
+
+    32% {
+        transform: rotate(-176deg);
+    }
+
+    35% {
+        transform: rotate(-310deg);
+    }
+
+    40% {
+        transform: rotate(-374deg);
+    }
+
+    47% {
+        transform: rotate(-338deg);
+    }
+
+    50% {
+        transform: rotate(-350deg);
+    }
+
+    55% {
+        transform: rotate(-415deg);
+    }
+
+    68% {
+        transform: rotate(-545deg);
+    }
+
+    70% {
+        transform: rotate(-538deg);
+    }
+
+    73% {
+        transform: rotate(-533deg);
+    }
+
+    78% {
+        transform: rotate(-590deg);
+    }
+
+    82% {
+        transform: rotate(-719deg);
+    }
+
+    92% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#supermariopath-mario {
+    animation: supermariopath-mario__fl 6000ms linear infinite normal forwards;
+}
+
+@keyframes supermariopath-mario__fl {
+    0% {
+        filter: drop-shadow(5px 8px 14.142136px rgba(0, 0, 0, 0.85)) blur(0px);
+    }
+
+    40% {
+        filter: drop-shadow(5px 8px 14.142136px rgba(0, 0, 0, 0.85)) blur(0px);
+    }
+
+    42% {
+        filter: drop-shadow(5px 8px 14.142136px rgba(0, 0, 0, 0.85)) blur(4px);
+    }
+
+    43% {
+        filter: drop-shadow(5px 8px 14.142136px rgba(0, 0, 0, 0.85)) blur(0px);
+    }
+
+    100% {
+        filter: drop-shadow(5px 8px 14.142136px rgba(0, 0, 0, 0.85)) blur(0px);
+    }
+}
+
+#supermariopath-mario-wheels-front_tr {
+    animation: supermariopath-mario-wheels-front_tr__tr 6000ms linear infinite normal forwards;
+}
+
+@keyframes supermariopath-mario-wheels-front_tr__tr {
+    0% {
+        transform: translate(44px, 28px) rotate(-0.9deg);
+    }
+
+    10% {
+        transform: translate(44px, 28px) rotate(9deg);
+    }
+
+    13% {
+        transform: translate(44px, 28px) rotate(-8deg);
+    }
+
+    18% {
+        transform: translate(44px, 28px) rotate(5deg);
+    }
+
+    20% {
+        transform: translate(44px, 28px) rotate(-0.5deg);
+    }
+
+    23% {
+        transform: translate(44px, 28px) rotate(-16deg);
+    }
+
+    25% {
+        transform: translate(44px, 28px) rotate(0deg);
+    }
+
+    60% {
+        transform: translate(44px, 28px) rotate(-16);
+    }
+
+    68% {
+        transform: translate(44px, 28px) rotate(0.8g);
+    }
+
+    100% {
+        transform: translate(44px, 28px) rotate(0.8deg);
+    }
+}
+
+#supermariopath-mario-gloves_tr {
+    animation: supermariopath-mario-gloves_tr__tr 6000ms linear infinite normal forwards;
+}
+
+@keyframes supermariopath-mario-gloves_tr__tr {
+    0% {
+        transform: translate(33px, 28px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(33px, 28px) rotate(9deg);
+    }
+
+    13% {
+        transform: translate(33px, 28px) rotate(-3deg);
+    }
+
+    18% {
+        transform: translate(33px, 28px) rotate(14deg);
+    }
+
+    20% {
+        transform: translate(33px, 28px) rotate(-0.9deg);
+    }
+
+    23% {
+        transform: translate(33px, 28px) rotate(-9deg);
+    }
+
+    25% {
+        transform: translate(33px, 28px) rotate(0deg);
+    }
+
+    60% {
+        transform: translate(33px, 28px) rotate(-10deg);
+    }
+
+    68% {
+        transform: translate(33px, 28px) rotate(-2deg);
+    }
+
+    100% {
+        transform: translate(33px, 28px) rotate(-2deg);
+    }
+}
+
+#supermariopath-luigi_to {
+    animation: supermariopath-luigi_to__to 6000ms linear infinite normal forwards;
+}
+
+@keyframes supermariopath-luigi_to__to {
+    0% {
+        offset-distance: 0%;
+        animation-timing-function: cubic-bezier(0.96, -0.01, 1, 1);
+    }
+
+    3% {
+        offset-distance: 3%;
+    }
+
+    6% {
+        offset-distance: 6%;
+    }
+
+    8% {
+        offset-distance: 12%;
+    }
+
+    16% {
+        offset-distance: 26%;
+    }
+
+    25% {
+        offset-distance: 41%;
+    }
+
+    33% {
+        offset-distance: 79%;
+    }
+
+    40% {
+        offset-distance: 91%;
+    }
+
+    41% {
+        offset-distance: 92%;
+    }
+
+    50% {
+        offset-distance: 100%;
+    }
+
+    100% {
+        offset-distance: 100%;
+    }
+}
+
+#supermariopath-luigi_tr {
+    animation: supermariopath-luigi_tr__tr 6000ms linear infinite normal forwards;
+}
+
+@keyframes supermariopath-luigi_tr__tr {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    8% {
+        transform: rotate(0deg);
+    }
+
+    10% {
+        transform: rotate(15deg);
+    }
+
+    16% {
+        transform: rotate(-35deg);
+    }
+
+    25% {
+        transform: rotate(-153deg);
+    }
+
+    26% {
+        transform: rotate(-176deg);
+    }
+
+    31% {
+        transform: rotate(-195deg);
+    }
+
+    33% {
+        transform: rotate(-255deg);
+    }
+
+    35% {
+        transform: rotate(-286deg);
+    }
+
+    36% {
+        transform: rotate(-286deg);
+    }
+
+    38% {
+        transform: rotate(-313deg);
+    }
+
+    40% {
+        transform: rotate(-343deg);
+    }
+
+    41% {
+        transform: rotate(-318deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}

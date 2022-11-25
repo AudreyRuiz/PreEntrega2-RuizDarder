@@ -6,38 +6,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CALENDARIO</title>
-    <meta name="description" content="Ingrese al mundo de la Fórmula 1. Su fuente de referencia para conocer todo sobre los circuitos y fechas de las carreras.">
+    <meta name="description"
+        content="Ingrese al mundo de la Fórmula 1. Su fuente de referencia para conocer todo sobre los circuitos y fechas de las carreras.">
     <meta name="keywords" content="F1,formula1,deportes,coches,carreras,autos,velocidad">
     <link rel="stylesheet" href="../style/estilos.css">
     <link rel="icon" href="../img/icon.ico">
 </head>
 
 <body>
-    <header>
-        <div class="ancho">
+    <header class="header2">
+        <nav>
             <div class="logo">
-                <a href="../index.html"><img src="../img/f1_logo.svg" alt="logo f1"></a>
+                <a href="index.html"><img src="../img/f1_logo.svg" alt="logo f1"></a>
             </div>
-            <nav class="menu">
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="calendario.html">Calendario</a></li>
-                    <li><a href="piloto.html">Pilotos</a></li>
-                    <li><a href="escuderia.html">Escuderias</a></li>
-                    <li><a href="momento.html">Highlights</a></li>
-                    <li><a href="../index.html#contacto">Contacto</a></li>
-                    <li><button class="switch" id="switch"><span><i class="fas fa-sun"></i></span><span><i
-                        class="fas fa-moon"></i></span></button></li>
-                </ul>
-            </nav>
-        </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="bar-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a class="active" href="calendario.html">Calendario</a></li>
+                <li><a href="piloto.html">Pilotos</a></li>
+                <li><a href="escuderia.html">Escuderias</a></li>
+                <li><a href="momento.html">Highlights</a></li>
+                <li><a href="../index.html#contacto">Contacto</a></li>
+                <li><button aria-label="switch" class="switch" id="switch"><span><i class="fas fa-sun"></i></span><span><i
+                                class="fas fa-moon"></i></span></button></li>
+            </ul>
+        </nav>
     </header>
 
     <section class="presentacion">
         <h1>Calendario F1 2022: Todas las fechas definitivas</h1>
-        <h4>El calendario 2022 de la Fórmula 1 se ha oficializado con 23 carreras, nuevas incorporaciones, y alguna que
-            otra incógnita.</h4>
+        <p>El calendario 2022 de la Fórmula 1 se ha oficializado con 23 carreras, nuevas incorporaciones, y alguna que
+            otra incógnita.</p>
     </section>
+
+    <svg class="mario-path" viewBox="-1 -1 12 8">
+        <defs>
+            <path id="infinite" d="M5 3C4 2 3.1 1 2 1a2 2 
+         0 000 4c1.1 0 2-1 3-2s1.9-2 
+         3-2a2 2 0 010 4C6.9 
+         5 6 4 5 3" />
+
+            <radialGradient id="sgrad" gradientUnits="userSpaceOnUse" cx="5" cy="3" r="3.4">
+                <stop offset=".25" stop-color="#020710" />
+                <stop offset=".9" stop-color="#020710" stop-opacity="0" />
+            </radialGradient>
+        </defs>
+
+        <use xlink:href="#infinite" class="bottom" />
+        <path class="clip-shadow" d="M4.5 2.5C3.7 1.7 2.9 1 2 1m6 4c-1 0-1.7-.7-2.5-1.5" />
+        <use xlink:href="#infinite" class="rh-line" />
+        <use xlink:href="#infinite" class="ibm-line" />
+    </svg>
+
+    <p class="cargando">Cargando circuito
+        <span class="dot one">.</span>
+        <span class="dot two">.</span>
+        <span class="dot three">.</span>
+    </p>
 
     <section>
         <div class="cuadros-calendario">
@@ -83,7 +111,7 @@
                 </li>
                 <li>
                     <figure>
-                        <img src="../img/4.jpg"alt="Circuito bahrein">
+                        <img src="../img/4.jpg" alt="Circuito bahrein">
                         <figcaption>
                             <h2>Gran Premio de Bahréin 2022 de F1</h2>
                             <p>Del 18 al 20 de marzo</p>
@@ -96,7 +124,7 @@
                 </li>
                 <li>
                     <figure>
-                        <img src="../img/5.jpg"alt="Circuito bahrein">
+                        <img src="../img/5.jpg" alt="Circuito bahrein">
                         <figcaption>
                             <h2>Gran Premio de Bahréin 2022 de F1</h2>
                             <p>Del 18 al 20 de marzo</p>
@@ -109,7 +137,7 @@
                 </li>
                 <li>
                     <figure>
-                        <img src="../img/6.jpg"alt="Circuito bahrein">
+                        <img src="../img/6.jpg" alt="Circuito bahrein">
                         <figcaption>
                             <h2>Gran Premio de Bahréin 2022 de F1</h2>
                             <p>Del 18 al 20 de marzo</p>
@@ -122,7 +150,7 @@
                 </li>
                 <li>
                     <figure>
-                        <img src="../img/7.jpg"alt="Circuito bahrein">
+                        <img src="../img/7.jpg" alt="Circuito bahrein">
                         <figcaption>
                             <h2>Gran Premio de Bahréin 2022 de F1</h2>
                             <p>Del 18 al 20 de marzo</p>
@@ -135,7 +163,7 @@
                 </li>
                 <li>
                     <figure>
-                        <img src="../img/8.jpg"alt="Circuito bahrein">
+                        <img src="../img/8.jpg" alt="Circuito bahrein">
                         <figcaption>
                             <h2>Gran Premio de Bahréin 2022 de F1</h2>
                             <p>Del 18 al 20 de marzo</p>
@@ -148,7 +176,7 @@
                 </li>
                 <li>
                     <figure>
-                        <img src="../img/9.jpg"alt="Circuito bahrein">
+                        <img src="../img/9.jpg" alt="Circuito bahrein">
                         <figcaption>
                             <h2>Gran Premio de Bahréin 2022 de F1</h2>
                             <p>Del 18 al 20 de marzo</p>
@@ -161,7 +189,7 @@
                 </li>
                 <li>
                     <figure>
-                        <img src="../img/10.jpg"alt="Circuito bahrein">
+                        <img src="../img/10.jpg" alt="Circuito bahrein">
                         <figcaption>
                             <h2>Gran Premio de Bahréin 2022 de F1</h2>
                             <p>Del 18 al 20 de marzo</p>
@@ -174,7 +202,7 @@
                 </li>
                 <li>
                     <figure>
-                        <img src="../img/11.jpg"alt="Circuito bahrein">
+                        <img src="../img/11.jpg" alt="Circuito bahrein">
                         <figcaption>
                             <h2>Gran Premio de Bahréin 2022 de F1</h2>
                             <p>Del 18 al 20 de marzo</p>
@@ -187,7 +215,7 @@
                 </li>
                 <li>
                     <figure>
-                        <img src="../img/12.jpg"alt="Circuito bahrein">
+                        <img src="../img/12.jpg" alt="Circuito bahrein">
                         <figcaption>
                             <h2>Gran Premio de Bahréin 2022 de F1</h2>
                             <p>Del 18 al 20 de marzo</p>
@@ -200,7 +228,7 @@
                 </li>
                 <li>
                     <figure>
-                        <img src="../img/13.jpg"alt="Circuito bahrein">
+                        <img src="../img/13.jpg" alt="Circuito bahrein">
                         <figcaption>
                             <h2>Gran Premio de Bahréin 2022 de F1</h2>
                             <p>Del 18 al 20 de marzo</p>
@@ -213,7 +241,7 @@
                 </li>
                 <li>
                     <figure>
-                        <img src="../img/14.jpg"alt="Circuito bahrein">
+                        <img src="../img/14.jpg" alt="Circuito bahrein">
                         <figcaption>
                             <h2>Gran Premio de Bahréin 2022 de F1</h2>
                             <p>Del 18 al 20 de marzo</p>
@@ -226,7 +254,7 @@
                 </li>
                 <li>
                     <figure>
-                        <img src="../img/15.jpg"alt="Circuito bahrein">
+                        <img src="../img/15.jpg" alt="Circuito bahrein">
                         <figcaption>
                             <h2>Gran Premio de Bahréin 2022 de F1</h2>
                             <p>Del 18 al 20 de marzo</p>
@@ -249,16 +277,16 @@
             <h2 class="titulo_contenedor">Comunicate conmigo</h2>
         </div>
         <div class="redes_sociales">
-            <a href="https://twitter.com/?lang=es">
+            <a aria-label="twitter" href="https://twitter.com/?lang=es">
                 <i class="fab fa-twitter"></i>
             </a>
-            <a href="https://es-la.facebook.com/">
+            <a aria-label="facebook" href="https://es-la.facebook.com/">
                 <i class="fab fa-facebook"></i>
             </a>
-            <a href="https://www.instagram.com/">
+            <a aria-label="instagram" href="https://www.instagram.com/">
                 <i class="fab fa-instagram"></i>
             </a>
-            <a href="https://es-la.facebook.com/">
+            <a aria-label="whatsapp" href="https://es-la.facebook.com/">
                 <i class="fab fa-whatsapp"></i>
             </a>
         </div>
@@ -269,7 +297,7 @@
                 licenses restricting copying, distribution, and decompilation.</p>
         </div>
         <div>
-            <nav class="menu_footer">
+            <div class="menu_footer">
                 <ul>
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="calendario.html">Calendario</a></li>
@@ -277,7 +305,7 @@
                     <li><a href="escuderia.html">Escuderias</a></li>
                     <li><a href="momento.html">Highlights</a></li>
                 </ul>
-            </nav>
+            </div>
         </div>
     </footer>
     <script src="../main.js"></script>

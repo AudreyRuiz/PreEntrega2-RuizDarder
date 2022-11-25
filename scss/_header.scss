@@ -1,53 +1,144 @@
-header {
-    top: 0;
-    width: 100%;
-    background: $color-rojo;
-    height: 80px;
-    position: sticky;
-    z-index: 100;
-}
-
-.ancho {
-    width: 90%;
-    height: 80px;
-    margin: auto;
-}
-
-.logo {
-    width: 10%;
-    height: 80px;
-    float: left;
-    padding-top: 23px;
-    box-sizing: border-box;
-    text-align: center;
-}
-
-nav {
-    @include menu;
-    width: 90%;
-}
-
-nav ul li {
-    display: inline-block;
-}
-
-nav ul li a {
-    color: $color-letras;
-    font-size: 18px;
+* {
+    margin: 0;
+    padding: 0;
     text-decoration: none;
-    text-transform: uppercase;
-    padding-left: 20px;
-    font-weight: bold;
-    letter-spacing: .5px;
+    list-style: none;
+    box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-nav ul li a:hover {
-    color: black;
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/fondoheader.png);
+    text-decoration: none;
+    background-position: center;
+    background-size: cover;
 }
 
-ul {
-    list-style: none;
+.header2 {
+    width: 100%;
+    height: 15vh;
+    background-image: url(../img/fondoheader.png);
+    text-decoration: none;
+    background-position: top;
+}
+
+nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 140px;
+    margin-left: 20px;
+}
+
+.bar-btn {
+    font-size: 25px;
+    color: $color-letras;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav-menu {
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 100px;
+    background-color: rgba(0, 0, 0, .80);
+    text-align: center;
+    transition: all .5%;
+    z-index: 100;
+}
+
+.nav-menu li {
+    display: none;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all .5s;
+}
+
+.nav-menu li a {
+    color: $color-letras;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.nav-menu li a.active,
+.nav-menu li a:hover {
+    color: $color-rojo;
+    transition: .3s;
+
+    body.dark & {
+        color: $color-rojo;
+    }
+}
+
+#check {
+    display: none;
+}
+
+#check:checked~.nav-menu {
+    height: 100vh;
+}
+
+#check:checked~.nav-menu li {
+    display: block;
+}
+
+.banner-text {
+    padding: 0 30px;
+    margin-top: 150px;
+    text-align: center;
+    color: $color-letras;
+}
+
+.banner-text h3 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.banner-text span {
+    color: $color-rojo;
+}
+
+.banner-text h2 {
+    font-size: 35px;
+    font-weight: 600;
+    color: $color-letras;
+}
+
+.button1 {
+    margin-right: 40px;
+    padding: 10px;
+    background-color: $color-rojo;
+    color: $color-letras;
+    border-radius: 5px;
+}
+
+.button1:hover {
+    background-color: $color-letras;
+    color: $color-rojo;
+    transition: .5s;
+}
+
+.button2 {
+    margin-right: 40px;
+    padding: 10px;
+    background-color: $color-letras;
+    color: $color-rojo;
+    border-radius: 5px;
+}
+
+.button2:hover {
+    background-color: $color-rojo;
+    color: $color-letras;
+    transition: .5s;
 }
 
 .switch {
@@ -74,14 +165,17 @@ ul {
         transition: .3s ease all;
         box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 2);
     }
-    &.active{
+
+    &.active {
         background: orange;
         color: #000;
-        &::after{
+
+        &::after {
             right: 0;
             left: unset;
         }
     }
+
     span {
         width: 30px;
         height: 30px;

@@ -1,0 +1,207 @@
+.cuadros-calendario {
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+}
+
+.cuadros-calendario ul {
+    justify-content: center;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.cuadros-calendario ul :hover figcaption {
+    display: block;
+}
+
+.cuadros-calendario li {
+    width: 30%;
+}
+
+.circuito {
+    width: 100%;
+}
+
+.cuadros-calendario ul li figure {
+    margin: 0px;
+    padding: 5px;
+    position: relative;
+}
+
+.cuadros-calendario ul li figure img {
+    width: 100%;
+}
+
+.cuadros-calendario ul li figure figcaption {
+    display: none;
+    color: $color-letras;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    text-align: center;
+    padding: 15px;
+    font: 20px/30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.cuadros-calendario figcaption a {
+    position: relative;
+    color: $color-letras;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: $color-rojo;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.inicio_calendario {
+    color: $color-letras;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 50px;
+    margin-top: 50px;
+}
+
+.no-alinear {
+    flex-wrap: wrap;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+:root {
+    --main-bg-color: #020710;
+}
+
+.cargando {
+    text-align: center;
+    color: #a4adb2;
+    font-size: 1.1rem;
+    font-family: "Press Start 2P", cursive;
+    position: relative;
+    z-index: 1;
+    margin: 0;
+}
+
+span.dot {
+    margin-left: -1rem;
+}
+
+.one {
+    opacity: 0;
+    animation: dot 1.3s infinite;
+    animation-delay: 0s;
+}
+
+.two {
+    opacity: 0;
+    animation: dot 1.3s infinite;
+    animation-delay: 0.2s;
+}
+
+.three {
+    opacity: 0;
+    animation: dot 1.3s infinite;
+    animation-delay: 0.3s;
+}
+
+@keyframes dot {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.bottom,
+.rh-line,
+.ibm-line {
+    fill: none;
+}
+
+.bottom {
+    stroke-width: inherit;
+    stroke: #567;
+    stroke-opacity: 0.3;
+}
+
+.rh-line,
+.ibm-line {
+    stroke: #f80000;
+    animation: loop 3s linear infinite;
+    stroke-dasharray: 0 28;
+    stroke-linecap: round;
+}
+
+.mario-path {
+    width: 100%;
+    stroke-width: 1.43;
+    animation: rot 36s linear infinite;
+    max-height: 50vh;
+    margin-top: 25vh;
+}
+
+.ibm-line {
+    stroke: #00ef00;
+    animation-delay: -1.5s;
+}
+
+.rh-line,
+.ibm-line {
+    mix-blend-mode: screen;
+}
+
+@keyframes rot {
+    49% {
+        transform: rotate(179deg) rotatey(70deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loop {
+    0% {
+        stroke-dashoffset: 0.5;
+        stroke-dasharray: 1 26.5;
+        stroke-width: 1.5;
+    }
+
+    20% {
+        stroke-width: 0.35;
+    }
+
+    50% {
+        stroke-dasharray: 7 20.5;
+    }
+
+    90% {
+        stroke-width: 0.35;
+    }
+
+    100% {
+        stroke-width: 1.5;
+        stroke-dasharray: 1 26.5;
+        stroke-dashoffset: 28;
+    }
+}
+
+.clip-shadow {
+    stroke-linecap: butt;
+    fill: none;
+    opacity: 0.9;
+    stroke-width: inherit;
+    stroke: url(#sgrad);
+}

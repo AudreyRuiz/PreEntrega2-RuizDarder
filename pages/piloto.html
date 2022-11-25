@@ -13,31 +13,33 @@
 </head>
 
 <body>
-    <header>
-        <div class="ancho">
+    <header class="header2">
+        <nav>
             <div class="logo">
-                <a href="../index.html"><img src="../img/f1_logo.svg" alt="logo f1"></a>
+                <a href="index.html"><img src="../img/f1_logo.svg" alt="logo f1"></a>
             </div>
-            <nav class="menu">
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="calendario.html">Calendario</a></li>
-                    <li><a href="piloto.html">Pilotos</a></li>
-                    <li><a href="escuderia.html">Escuderias</a></li>
-                    <li><a href="momento.html">Highlights</a></li>
-                    <li><a href="../index.html#contacto">Contacto</a></li>
-                    <li><button class="switch" id="switch"><span><i class="fas fa-sun"></i></span><span><i
-                                    class="fas fa-moon"></i></span></button></li>
-                </ul>
-            </nav>
-        </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="bar-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="calendario.html">Calendario</a></li>
+                <li><a class="active" href="piloto.html">Pilotos</a></li>
+                <li><a href="escuderia.html">Escuderias</a></li>
+                <li><a href="momento.html">Highlights</a></li>
+                <li><a href="../index.html#contacto">Contacto</a></li>
+                <li><button aria-label="switch" class="switch" id="switch"><span><i class="fas fa-sun"></i></span><span><i
+                                class="fas fa-moon"></i></span></button></li>
+            </ul>
+        </nav>
     </header>
 
     <section>
         <div class="presentacion">
             <h1>Pilotos de F1 2022</h1>
-            <h4>Echa un vistazo a la alineación oficial de F1 de esta temporada. Desglose completo de conductores,
-                puntos y posiciones actuales. Sigue a tus pilotos de F1 favoritos dentro y fuera de la pista.</h4>
+            <p>Echa un vistazo a la alineación oficial de F1 de esta temporada. Desglose completo de conductores,
+                puntos y posiciones actuales. Sigue a tus pilotos de F1 favoritos dentro y fuera de la pista.</p>
         </div>
 
         <div class="contenedor-escuderia">
@@ -323,16 +325,16 @@
                 <h2 class="titulo_contenedor">Comunicate conmigo</h2>
             </div>
             <div class="redes_sociales">
-                <a href="https://twitter.com/?lang=es">
+                <a aria-label="twitter" href="https://twitter.com/?lang=es">
                     <i class="fab fa-twitter"></i>
                 </a>
-                <a href="https://es-la.facebook.com/">
+                <a aria-label="facebook" href="https://es-la.facebook.com/">
                     <i class="fab fa-facebook"></i>
                 </a>
-                <a href="https://www.instagram.com/">
+                <a aria-label="instagram" href="https://www.instagram.com/">
                     <i class="fab fa-instagram"></i>
                 </a>
-                <a href="https://es-la.facebook.com/">
+                <a aria-label="whatsapp" href="https://es-la.facebook.com/">
                     <i class="fab fa-whatsapp"></i>
                 </a>
             </div>
@@ -343,7 +345,7 @@
                     licenses restricting copying, distribution, and decompilation.</p>
             </div>
             <div>
-                <nav class="menu_footer">
+                <div class="menu_footer">
                     <ul>
                         <li><a href="../index.html">Inicio</a></li>
                         <li><a href="calendario.html">Calendario</a></li>
@@ -351,7 +353,7 @@
                         <li><a href="escuderia.html">Escuderias</a></li>
                         <li><a href="momento.html">Highlights</a></li>
                     </ul>
-                </nav>
+                </div>
             </div>
         </footer>
         <script src="../main.js"></script>

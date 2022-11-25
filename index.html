@@ -15,22 +15,30 @@
 
 <body>
     <header>
-        <div class="ancho">
+        <nav>
             <div class="logo">
                 <a href="index.html"><img src="img/f1_logo.svg" alt="logo f1"></a>
             </div>
-            <nav class="menu">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="pages/calendario.html">Calendario</a></li>
-                    <li><a href="pages/piloto.html">Pilotos</a></li>
-                    <li><a href="pages/escuderia.html">Escuderias</a></li>
-                    <li><a href="pages/momento.html">Highlights</a></li>
-                    <li><a href="index.html#contacto">Contacto</a></li>
-                    <li><button class="switch" id="switch"><span><i class="fas fa-sun"></i></span><span><i
-                                    class="fas fa-moon"></i></span></button></li>
-                </ul>
-            </nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="bar-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="nav-menu">
+                <li><a class="active" href="index.html">Inicio</a></li>
+                <li><a href="pages/calendario.html">Calendario</a></li>
+                <li><a href="pages/piloto.html">Pilotos</a></li>
+                <li><a href="pages/escuderia.html">Escuderias</a></li>
+                <li><a href="pages/momento.html">Highlights</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+                <li><button aria-label="switch" class="switch" id="switch"><span><i
+                                class="fas fa-sun"></i></span><span><i class="fas fa-moon"></i></span></button></li>
+            </ul>
+        </nav>
+        <div class="banner-text">
+            <h2>¡Hola!</h2>
+            <h3><span>Bienvenido</span> a la experiencia de la <span>Formula 1</span></h3>
+            <a href="pages/calendario.html" class="button1">Explora calendario</a>
+            <a href="pages/escuderia.html" class="button2">Explora escuderias</a>
         </div>
     </header>
     <div class="slider">
@@ -56,7 +64,7 @@
     <section>
         <div class="texto-blanco">
             <h2>Noticias</h2>
-            <h4>Descubra todo lo que necesita saber sobre la F1</h4>
+            <h3>Descubra todo lo que necesita saber sobre la F1</h3>
         </div>
         <div class="cuadros">
             <ul class="contenedor-noticia">
@@ -65,9 +73,9 @@
                         <img src="img/binotto.jpg" alt="Binotto Ferrari">
                         <figcaption>
                             <h2>Binotto says...</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum laudantium cumque
-                                doloremque
-                                quaerat officia ipsa ipsam tempore</p>
+                            <p>“Ahora mismo no tenemos muchas explicaciones. Hemos luchado desde la clasificación y en
+                                la carrera ha sido duro, difícil y todo eso hay que analizarlo. Este no es el resultado
+                                que queríamos ver...</p>
                         </figcaption>
                     </figure>
                 </li>
@@ -76,8 +84,8 @@
                         <img src="img/checo.jpg" alt="Sergio Perez">
                         <figcaption>
                             <h2>Sergio Perez win...</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, explicabo eius voluptatum
-                                ea,
+                            <p>En diciembre, Pérez firmó con Red Bull Racing para 2021,​luego de lograr su primera
+                                victoria de Fórmula 1 en el Gran Premio de Sakhir de 2020, convirtiéndose en...
                             </p>
                         </figcaption>
                     </figure>
@@ -87,8 +95,9 @@
                         <img src="img/gasly.jpg" alt="Pierre Gasly">
                         <figcaption>
                             <h2>Gasly very disappointed...</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae reiciendis nemo aperiam
-                                dolorum</p>
+                            <p>Es posible que haya terminado en décimo lugar en el Gran Premio de Singapur de este fin
+                                de semana, pero Pierre Gasly estaba decepcionado con el resultado e insistió en que
+                                AlphaTauri...</p>
                         </figcaption>
                     </figure>
                 </li>
@@ -97,7 +106,8 @@
                         <img src="img/verstappen.jpg" alt="Max Verstappen">
                         <figcaption>
                             <h2>Max Verstappen championship</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, dicta! Impedit</p>
+                            <p>Max Verstappen se coronó campeón mundial de Fórmula Uno en circunstancias extrañas luego
+                                de una victoria dominante en el Gran Premio de Japón el domingo.</p>
                         </figcaption>
                     </figure>
                 </li>
@@ -109,16 +119,16 @@
             <h2 class="titulo_contenedor">Comunicate conmigo</h2>
         </div>
         <div class="redes_sociales">
-            <a href="https://twitter.com/?lang=es">
+            <a aria-label="twitter" href="https://twitter.com/?lang=es">
                 <i class="fab fa-twitter"></i>
             </a>
-            <a href="https://es-la.facebook.com/">
+            <a aria-label="facebook" href="https://es-la.facebook.com/">
                 <i class="fab fa-facebook"></i>
             </a>
-            <a href="https://www.instagram.com/">
+            <a aria-label="instagram" href="https://www.instagram.com/">
                 <i class="fab fa-instagram"></i>
             </a>
-            <a href="https://es-la.facebook.com/">
+            <a aria-label="whatsapp" href="https://es-la.facebook.com/">
                 <i class="fab fa-whatsapp"></i>
             </a>
         </div>
